@@ -3,6 +3,24 @@ modules = ["python-3.11"]
 expertMode = true
 
 [workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Run Sum"
+
+[[workflows.workflow]]
+name = "Run Sum"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "g++ sum.cpp -o sum && ./sum"
 
 [[ports]]
 localPort = 5000
