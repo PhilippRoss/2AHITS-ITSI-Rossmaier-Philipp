@@ -27,4 +27,4 @@ localPort = 5000
 externalPort = 80
 
 [nix]
-packages = ["mtools", "sl", "tree"]
+packages = ["mtools", "sl", "tree", "gdb"]
