@@ -27,4 +27,4 @@ localPort = 5000
 externalPort = 80
 
 [nix]
-packages = ["mtools", "sl", "tree", "gdb"]
+packages = ["mtools", "sl", "tree", "gdb", "haskellPackages.gdp", "hexedit", "vimHugeX", "q-text-as-data", "unzip"]
